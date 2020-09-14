@@ -1,0 +1,10 @@
+@import url("../../styles/mixins.pcss");
+
+.nav-list__list {
+  display: flex;
+  flex-flow: row nowrap;
+
+  @include bigTablets {
+    display: none;
+  }
+}

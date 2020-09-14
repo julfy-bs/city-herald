@@ -1,0 +1,56 @@
+@import url("../../styles/mixins.pcss");
+
+.header {
+  height: 120px;
+
+}
+
+.header__wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @include bigTablets {
+    justify-content: center;
+  }
+
+  @include phones {
+    height: auto;
+    padding-top: 10px;
+  }
+}
+
+.header__left {
+  height: 100%;
+  flex: 1 1 30%;
+  max-width: 30%;
+  margin: 0 2% 0 0;
+}
+
+.header__center {
+  height: 100%;
+  flex: 1 1 40%;
+  max-width: 40%;
+  margin: 0 2%;
+
+  @include bigTablets {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  @include phones {
+    height: auto;
+  }
+}
+
+
+.header__right {
+  height: 100%;
+  flex: 1 1 30%;
+  max-width: 30%;
+  margin: 0 0 0 2%;
+}

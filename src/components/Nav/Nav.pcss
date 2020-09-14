@@ -1,0 +1,48 @@
+@import url("../../styles/mixins.pcss");
+
+.top-nav {
+  width: 100%;
+  height: 50px;
+  background-color: $NavBackground;
+  color: $NavColor;
+  font-family: "Open Sans";
+
+  @include bigTablets {
+    height: 50px;
+  }
+}
+
+.top-nav__wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.top-nav-wrapper__left {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.top-nav-wrapper__right {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: $NavIconColor;
+  font-size: 13px;
+  font-weight: 600;
+
+
+}
+
+.top-nav__big-tablets {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}

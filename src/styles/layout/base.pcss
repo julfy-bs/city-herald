@@ -1,11 +1,3 @@
-html {
-  @include desktop {
-    font-size: 15px;
-  }
-  @include tablets {
-    font-size: 14px;
-  }
-}
 body,
 html {
   height: 100%;
@@ -18,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
+  margin: 0;
 }
 
 .wrapper {
@@ -34,6 +27,13 @@ body {
 
   @include phones {
     width: 85%;
+  }
+
+  &--header {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto;
+    height: 100%;
   }
 }
 
@@ -80,6 +80,7 @@ button[type="button"] {
 a {
   color: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
 
 img {

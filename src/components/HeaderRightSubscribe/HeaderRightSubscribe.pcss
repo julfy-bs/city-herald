@@ -1,0 +1,24 @@
+@import url("../../styles/mixins.pcss");
+
+.header-subscribe__button {
+  border: none;
+  background: svg-load('HeaderSubscribeButton.svg', fill="$ButtonNoHoverYellow", width=100%, height=100%) center no-repeat;
+  width: 150px;
+  height: 40px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    background: svg-load('HeaderSubscribeButton.svg', fill="$ButtonHoverGreen", width=100%, height=100%) center no-repeat;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  @include bigTablets {
+    width: 120px;
+
+    height: 30px;
+  }
+}

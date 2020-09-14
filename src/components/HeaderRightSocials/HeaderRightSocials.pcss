@@ -1,0 +1,59 @@
+@import url("../../styles/mixins.pcss");
+
+.header-right__socials {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-socials__item {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 10px;
+  }
+
+  @include tablets {
+    margin-right: 3px;
+
+    &:last-child {
+      margin-right: 6px;
+    }
+  }
+}
+
+.header-socials__icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  @include bigTablets {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.vk {
+  background: svg-load('HeaderSocialVk.svg', width=100%, height=100%) center no-repeat;
+
+  &:hover {
+    background: svg-load('HeaderSocialVkGreen.svg', width=100%, height=100%) center no-repeat;
+  }
+}
+
+.fb {
+  background: svg-load('HeaderSocialFb.svg', width=100%, height=100%) center no-repeat;
+
+  &:hover {
+    background: svg-load('HeaderSocialFbGreen.svg', width=100%, height=100%) center no-repeat;
+  }
+}
+
+.ok {
+  background: svg-load('HeaderSocialOk.svg', width=100%, height=100%) center no-repeat;
+
+  &:hover {
+    background: svg-load('HeaderSocialOkGreen.svg', width=100%, height=100%) center no-repeat;
+  }
+}

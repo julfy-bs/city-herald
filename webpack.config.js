@@ -6,7 +6,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 module.exports = (env, argv) => {
   const isProductionBuild = argv.mode === "production";
@@ -58,16 +58,9 @@ module.exports = (env, argv) => {
       {
         loader: "svgo-loader",
         options: {
-          plugins: [
-            { removeTitle: true },
-            {
-              removeAttrs: {
-                attrs: "(fill|stroke)",
-              },
-            },
-          ],
-        },
-      },
+          plugins: [{removeTitle: true}, {removeAttrs: false}]
+        }
+      }
     ],
   };
 
@@ -87,7 +80,6 @@ module.exports = (env, argv) => {
   const config = {
     entry: {
       main: "./src/main.js",
-      admin: "./src/admin/main.js",
     },
     output: {
       path: path.resolve(__dirname, "./dist"),
@@ -120,12 +112,7 @@ module.exports = (env, argv) => {
         template: "src/index.pug",
         chunks: ["main"],
       }),
-      new HtmlWebpackPlugin({
-        template: "src/admin/index.pug",
-        filename: "admin/index.html",
-        chunks: ["admin"],
-      }),
-      new SpriteLoaderPlugin({ plainSprite: true }),
+      new SpriteLoaderPlugin({plainSprite: true}),
       new VueLoaderPlugin(),
     ],
     devtool: "#eval-source-map",

@@ -1,9 +1,17 @@
 {
-  "text-color": "#414c63",
+  "ButtonNoHoverYellow": "#ffe88f",
+  "ButtonHoverGreen": "#2e8b52",
+  "SearchButtonNoHover": "#878787",
+  "SearchButtonHover": "#2e8b52",
+  "SearchInputNoHover": "#dcdcdc",
+  "SearchInputHover": "#2e8b52",
+  "NavBackground": "#f2f2f2",
+  "NavColor": "#464646",
+  "NavIconColor": "#878787",
+  "text-color": "#000000",
   "links-color": "#4b6fd7",
   "errors-color": "#cd1515",
-  "bp-desktop-hd": "1800px",
-  "bp-desktop": "1200px",
+  "bp-bigTablets": "1024px",
   "bp-tablets": "768px",
   "bp-phones": "480px"
 }

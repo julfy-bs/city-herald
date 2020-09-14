@@ -2,7 +2,7 @@ const custom = require("../webpack.config.js")(null, "development");
 const path = require("path");
 
 module.exports = {
-  stories: ["../src/admin/**/*.stories.js"],
+  stories: ["../src/**/*.stories.js"],
   addons: [
     "@storybook/addon-actions",
     "@storybook/addon-links",

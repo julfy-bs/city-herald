@@ -1,0 +1,18 @@
+.nav-version {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 40px;
+}
+
+.nav-version__icon {
+  &:before {
+    content: '';
+    display: flex;
+    background: svg-load('Version.svg', fill=$NavIconColor, width=100%, height=100%) center no-repeat;
+    width: 41px;
+    height: 13px;
+    margin-right: 8px;
+  }
+}

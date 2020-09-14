@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
+    <g>
+        <g>
+            <path d="M22 2H0V0h22z"/>
+        </g>
+        <g>
+            <path d="M22 8H0V6h22z"/>
+        </g>
+        <g>
+            <path d="M22 14H0v-2h22z"/>
+        </g>
+    </g>
+</svg>
