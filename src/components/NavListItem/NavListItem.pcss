@@ -3,8 +3,34 @@
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 600;
+  position: relative;
+  min-width: 70px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 34px;
+      display: block;
+      width: 70px;
+      height: 6px;
+      background-color: #438573;
+    }
+  }
+
+  & .active {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 34px;
+      display: block;
+      width: 70px;
+      height: 6px;
+      background-color: #438573;
+    }
   }
 }

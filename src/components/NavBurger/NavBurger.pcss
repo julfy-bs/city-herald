@@ -4,14 +4,27 @@
   align-items: center;
   justify-content: flex-start;
   margin-right: 30px;
-}
 
-.nav-burger__icon {
-  &:before {
-    content: '';
-    display: flex;
-    background: svg-load('BurgerMenu.svg', fill=$NavIconColor, width=100%, height=100%) center no-repeat;
-    width: 22px;
-    height: 18px;
+  .nav-burger__icon {
+    &:before {
+      content: '';
+      display: flex;
+      background: svg-load('BurgerMenu.svg', fill=$NavIconColor, width=100%, height=100%) center no-repeat;
+      width: 22px;
+      height: 18px;
+    }
+  }
+
+  &:hover {
+    .nav-burger__icon {
+      &:before {
+        content: '';
+        display: flex;
+        background: svg-load('BurgerMenu.svg', fill=$HoverGreen, width=100%, height=100%) center no-repeat;
+        width: 22px;
+        height: 18px;
+      }
+    }
   }
 }
+

@@ -1,7 +1,5 @@
 <template lang="pug">
-  a.nav-age(
-    href='#'
-  )
+  .nav-age
     .nav-age__icon
 
 </template>

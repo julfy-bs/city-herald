@@ -47,12 +47,14 @@ export default {
         height: 0
       },
       links: [
-        {id: 1, title: 'Об издании', href: "#"},
-        {id: 2, title: 'Реклама', href: "#"},
-        {id: 3, title: 'Объявления', href: "#"},
-        {id: 4, title: 'Галерея', href: "#"},
-        {id: 5, title: 'Контакты', href: "#"},
-      ]
+        {id: 0, title: 'Главная', href: "/"},
+        {id: 1, title: 'Об издании', href: "/about"},
+        {id: 2, title: 'Реклама', href: "/ad"},
+        {id: 3, title: 'Объявления', href: "/promo"},
+        {id: 4, title: 'Галерея', href: "/gallery"},
+        {id: 5, title: 'Контакты', href: "/contact"},
+      ],
+      activeTabId: 0,
     }
   },
   created() {

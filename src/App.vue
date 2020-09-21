@@ -2,15 +2,17 @@
   #app
     Nav
     Header
+    Tabs
 </template>
 <script>
 import Nav from "./components/Nav";
 import Header from "./components/Header";
+import Tabs from "./components/Tabs";
 
 export default {
   name: "app",
   components: {
-    Nav, Header
+    Nav, Header, Tabs
   },
 }
 </script>

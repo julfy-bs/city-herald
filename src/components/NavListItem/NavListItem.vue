@@ -1,7 +1,12 @@
 <template lang="pug">
   li.nav-list__item
+    <!-- router-link( -->
+    <!--  :to="link.href" -->
+    <!--  :data-text="link.title" -->
+    <!--  exact-active-class="nav-list__link--active" -->
+    <!-- ).nav-list__link -->
+
     a.nav-list__link(
-      href="#"
       :key="link.title"
     ) {{ link.title }}
 </template>
