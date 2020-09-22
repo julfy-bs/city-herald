@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <style>.cls-1{fill:#438573;}.cls-2{fill:#fff;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5px;fill-rule:evenodd;}.cls-3{fill:none;}</style>
+    </defs>
+    <title>arr-repost-Rselect</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_7_copy" data-name="Layer 7 copy">
+            <circle class="cls-1" cx="17.5" cy="17.5" r="17.5"/>
+            <path class="cls-2"
+                  d="M19.674,11.172l6.6,6.328-6.6,6.328V20.214a.5.5,0,0,0-.322-.467,10.234,10.234,0,0,0-5.959-.134A16.147,16.147,0,0,0,9,21.6a11.244,11.244,0,0,1,3.709-4.282,11.1,11.1,0,0,1,6.252-2.106c.112,0,.176,0,.183,0h.029a.5.5,0,0,0,.5-.5V11.172M19.174,10v4.714s-.075,0-.213,0a11.614,11.614,0,0,0-6.544,2.2C8.466,19.761,8,23,8,23a13.677,13.677,0,0,1,5.531-2.906,9.737,9.737,0,0,1,5.643.12V25L27,17.5,19.174,10Z"/>
+            <rect class="cls-3" x="7.5" y="8" width="20" height="20"/>
+        </g>
+    </g>
+</svg>

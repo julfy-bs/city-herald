@@ -6,7 +6,7 @@
           NavBurger
           NavBurgerSidebar
           NavList(
-            v-bind:links="links"
+            v-bind:links="links",
             v-if="window.width > 1024"
           )
           HeaderLeft(
@@ -30,9 +30,9 @@
           )
 </template>
 <script>
-import NavList from '../NavList'
-import NavBurger from '../NavBurger'
-import NavLogin from '../NavLogin'
+import NavList from '../NavList';
+import NavBurger from '../NavBurger';
+import NavLogin from '../NavLogin';
 import NavVersion from "../NavVersion/NavVersion";
 import NavAge from "../NavAge/NavAge";
 import NavBurgerSidebar from "../NavBurgerSidebar/NavBurgerSidebar";
@@ -47,11 +47,11 @@ export default {
         height: 0
       },
       links: [
-        {id: 1, title: 'Об издании', href: "/about"},
-        {id: 2, title: 'Реклама', href: "/ad"},
-        {id: 3, title: 'Объявления', href: "/promo"},
-        {id: 4, title: 'Галерея', href: "/gallery"},
-        {id: 5, title: 'Контакты', href: "/contact"},
+        {id: 0, title: 'Об издании', href: "/about"},
+        {id: 1, title: 'Реклама', href: "/ad"},
+        {id: 2, title: 'Объявления', href: "/promo"},
+        {id: 3, title: 'Галерея', href: "/gallery"},
+        {id: 4, title: 'Контакты', href: "/contact"},
       ],
       activeTabId: 0,
     }

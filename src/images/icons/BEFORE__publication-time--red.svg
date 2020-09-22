@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+    <defs>
+        <style>.cls-1{fill:#f00f00;}.cls-2{fill:none;stroke:#f00f00;stroke-miterlimit:10;}</style>
+    </defs>
+    <title>clock-red</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_7_copy" data-name="Layer 7 copy">
+            <path class="cls-1"
+                  d="M7.5.5a7,7,0,1,1-7,7,7.008,7.008,0,0,1,7-7m0-.5A7.5,7.5,0,1,0,15,7.5,7.5,7.5,0,0,0,7.5,0Z"/>
+            <polyline class="cls-2" points="7.5 3 7.5 7.5 10.458 10.458"/>
+        </g>
+    </g>
+</svg>

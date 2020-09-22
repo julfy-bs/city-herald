@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <style>.cls-1{fill:#438573;}.cls-2{fill:#fff;fill-rule:evenodd;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.5px;fill-rule:evenodd;}.cls-3{fill:none;}</style>
+    </defs>
+    <title>hert-R-select</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_7_copy" data-name="Layer 7 copy">
+            <circle class="cls-1" cx="17.5" cy="17.5" r="17.5"/>
+            <path class="cls-2"
+                  d="M17.5,14.031a4.92,4.92,0,0,0-1.752-1.741,3.955,3.955,0,0,0-4.776.8,4.493,4.493,0,0,0,.012,5.6A43.124,43.124,0,0,0,17.5,25.167a43.137,43.137,0,0,0,6.517-6.481,4.493,4.493,0,0,0,.012-5.6,3.952,3.952,0,0,0-4.777-.8A4.717,4.717,0,0,0,17.5,14.031Z"/>
+            <rect class="cls-3" x="7.5" y="7.5" width="20" height="20"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+.time {
+  margin-bottom: 10px;
+}
+
+.time__content {
+  color: $TextGreen;
+  font-family: "Open Sans";
+  font-size: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    background: svg-load('BEFORE__publication-time--green.svg', fill=$NavIconColor, width=100%, height=100%) center no-repeat;
+    width: 17px;
+    height: 17px;
+    margin-right: 7px;
+  }
+}

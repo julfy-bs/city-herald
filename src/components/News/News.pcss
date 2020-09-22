@@ -1,0 +1,33 @@
+.news {
+  border-right: 1px solid $BorderColor;
+  margin-bottom: 25px;
+}
+
+.news__item {
+  padding-top: 25px;
+  border-bottom: 1px solid $BorderColor;
+
+  &:hover {
+    cursor: pointer;
+
+    & .heading__content {
+      color: $HoverGreen;
+    }
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.news__wrapper {
+  padding-right: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+
+
+}
+
+.news__left {
+  padding-left: 20px;
+}

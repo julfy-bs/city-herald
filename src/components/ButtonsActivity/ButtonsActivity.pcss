@@ -1,0 +1,85 @@
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.buttons__like {
+  display: block;
+  background: svg-load('BUTTONS__like--radius.svg', width=100%, height=100%) center no-repeat;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: none;
+
+  &:hover {
+    display: block;
+    background: svg-load('BUTTONS__like--hover.svg', width=100%, height=100%) center no-repeat;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+  }
+}
+
+.buttons__repost {
+  display: block;
+  background: svg-load('BUTTONS__repost--radius.svg', width=100%, height=100%) center no-repeat;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: none;
+
+  &:hover {
+    display: block;
+    background: svg-load('BUTTONS__repost--hover.svg', width=100%, height=100%) center no-repeat;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+  }
+}
+
+.buttons__comment {
+  display: block;
+  width: 155px;
+  height: 35px;
+  background-color: transparent;
+  color: #878787;
+  font-family: "Open Sans";
+  font-size: 13px;
+  border: 1px solid #dcdcdc;
+  border-radius: 30px;
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 16px;
+    background: svg-load('BUTTONS__comment.svg', width=100%, height=100%) center no-repeat;
+    width: 17px;
+    height: 17px;
+  }
+
+  &:hover {
+    background-color: $ButtonHoverGreen;
+    color: $TextWhite;
+    border: 1px solid $HoverBorderColor;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: 16px;
+      background: svg-load('BUTTONS__comment--hover.svg', width=100%, height=100%) center no-repeat;
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

@@ -20,7 +20,7 @@
     }
 
     .search-form__input {
-      background: svg-load('SearchInputBackground.svg', fill="$SearchInputHover", width=100%, height=100%) center no-repeat;
+      border: 1px solid $HoverBorderColor;
     }
   }
 }
@@ -38,13 +38,13 @@
 }
 
 .search-form__input {
-  border: none;
   color: #878787;
   font-family: "Open Sans";
   font-size: 14px;
-  background: svg-load('SearchInputBackground.svg', fill="$SearchInputNoHover", width=100%, height=100%) center no-repeat;
   width: 200px;
   height: 40px;
+  border-radius: 30px;
+  border: 1px solid $BorderColor;
   padding-left: 47px;
 
   &::-webkit-input-placeholder {

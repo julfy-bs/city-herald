@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;}.cls-2{fill:#dcdcdc;}.cls-3,.cls-4{fill:none;}.cls-3{stroke:#878787;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.6px;fill-rule:evenodd;}
+        </style>
+    </defs>
+    <title>hert-R</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_7_copy" data-name="Layer 7 copy">
+            <path class="cls-2"
+                  d="M17.5,1A16.5,16.5,0,1,1,1,17.5,16.519,16.519,0,0,1,17.5,1m0-1A17.5,17.5,0,1,0,35,17.5,17.5,17.5,0,0,0,17.5,0Z"/>
+            <path class="cls-3"
+                  d="M17.5,14.031a4.928,4.928,0,0,0-1.752-1.741,3.955,3.955,0,0,0-4.776.8,4.493,4.493,0,0,0,.012,5.6A43.124,43.124,0,0,0,17.5,25.167a43.085,43.085,0,0,0,6.517-6.481,4.493,4.493,0,0,0,.012-5.6,3.953,3.953,0,0,0-4.777-.8A4.726,4.726,0,0,0,17.5,14.031Z"/>
+            <rect class="cls-4" x="7.5" y="7.5" width="20" height="20"/>
+        </g>
+    </g>
+</svg>
