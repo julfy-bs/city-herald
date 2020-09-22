@@ -39,7 +39,7 @@ export default {
       newsItems: [
         {
           id: 0,
-          imageUrl: (''),
+          imageUrl: ('https://static.promopult.ru/uploads/library/img/google_img_1.png'),
           tag: "Политика",
           tagColor: '#438573',
           heading: 'CNN: Дутерте просит Россскредите на вакцину от коо',
@@ -50,7 +50,7 @@ export default {
         },
         {
           id: 1,
-          imageUrl: (''),
+          imageUrl: ('https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png'),
           tag: 'События в регионе',
           tagColor: '#f00f00',
           heading: 'CNN: Дутерте просит Россскредите на вакцину от коо',
@@ -61,7 +61,7 @@ export default {
         },
         {
           id: 2,
-          imageUrl: (''),
+          imageUrl: ('https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg'),
           tag: 'Культура',
           tagColor: '#438573',
           heading: 'CNN: Дутерте просит Россскредите на вакцину от коо',
@@ -72,7 +72,7 @@ export default {
         },
         {
           id: 3,
-          imageUrl: (''),
+          imageUrl: ('https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg'),
           tag: 'Политика',
           tagColor: '#438573',
           heading: 'CNN: Дутерте просит Россскредите на вакцину от коо',
