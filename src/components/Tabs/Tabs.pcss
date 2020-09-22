@@ -3,18 +3,16 @@
 .tabs {
   height: 40px;
   border-bottom: 1px solid #ccc;
+
+  margin-bottom: 40px;
 }
 
-.tabs-list {
+.tabs__list {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: flex-start;
   height: 100%;
-
-  @include bigTablets {
-    display: none;
-  }
 }
 
 .tabs__wrapper {
@@ -25,7 +23,7 @@
   height: 100%;
 }
 
-.tabs-item {
+.tabs__item {
   display: inline-block;
   color: #000000;
   font-size: 14px;
@@ -36,8 +34,4 @@
   &:last-child {
     margin-right: 0;
   }
-}
-
-.tabs__link {
-
 }

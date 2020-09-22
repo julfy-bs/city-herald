@@ -2,8 +2,8 @@
   .tabs
     .container.container--tabs
       .tabs__wrapper.tabs-wrapper
-        ul.tabs-list
-          .tabs-item(
+        ul.tabs__list
+          .tabs__item(
             v-for="tab of tabs"
             :key="tab.id"
             v-bind:tab="tab"

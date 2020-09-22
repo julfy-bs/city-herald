@@ -1,5 +1,5 @@
 <template lang="pug">
-  .top-nav
+  nav.top-nav
     .container.container--header
       .top-nav__wrapper.top-nav-wrapper
         .top-nav-wrapper__left
@@ -47,7 +47,6 @@ export default {
         height: 0
       },
       links: [
-        {id: 0, title: 'Главная', href: "/"},
         {id: 1, title: 'Об издании', href: "/about"},
         {id: 2, title: 'Реклама', href: "/ad"},
         {id: 3, title: 'Объявления', href: "/promo"},
