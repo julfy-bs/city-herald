@@ -1,7 +1,6 @@
 <template lang="pug">
   .image
     .image__content.image__content--small(
-      :style="{backgroundImage:url('{}')}"
     )
 
 </template>
