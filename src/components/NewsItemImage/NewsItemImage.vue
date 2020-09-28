@@ -1,6 +1,7 @@
 <template lang="pug">
   .image
-    .image__content.image__content--small(
+    .image__content(
+      :class="{ 'image__content--big': newsItem.id === 0, 'image__content--small': newsItem.id > 0}"
     )
 
 </template>
@@ -15,7 +16,7 @@ export default {
   },
 };
 </script>
-<style lang="postcss" src="./NewsImage.pcss" scoped>
+<style lang="postcss" src="./NewsItemImage.pcss" scoped>
 </style>
 
 

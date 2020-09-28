@@ -1,20 +1,21 @@
 <template lang="pug">
   .time
     .time__content(
-      :key="newsItem.time"
-    ) Опубликовано {{newsItem.time}}
+      :key="shortNewsItem.time"
+    ) {{shortNewsItem.time}} {{shortNewsItem.date}}
 </template>
 <script>
 export default {
   props: {
-    newsItem: {
+    shortNewsItem: {
       type: Object,
       time: "",
+      date: "",
       required: true
     }
   },
 };
 </script>
-<style lang="postcss" src="./NewsTime.pcss" scoped>
+<style lang="postcss" src="./ShortNewsItemTime.pcss" scoped>
 </style>
 

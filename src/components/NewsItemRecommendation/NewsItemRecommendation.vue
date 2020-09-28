@@ -5,6 +5,6 @@
 <script>
 export default {};
 </script>
-<style lang="postcss" src="./NewsRecommendation.pcss" scoped>
+<style lang="postcss" src="./NewsItemRecommendation.pcss" scoped>
 </style>
 

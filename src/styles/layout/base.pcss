@@ -59,12 +59,20 @@ body {
   min-height: 50vh;
 }
 
+.column__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .row__wrapper {
   border-bottom: 1px solid $BorderColor;
   margin-bottom: 25px;
+  display: flex;
+  flex-flow: row nowrap;
 
   &--banner {
     border-bottom: none;
+    display: block;
   }
 }
 
@@ -72,7 +80,9 @@ body {
   max-width: 650px;
 }
 
-
+.side-column {
+  max-width: 320px;
+}
 
 .section {
   &--banner {

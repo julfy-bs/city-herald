@@ -8,10 +8,10 @@
       ButtonsActivity
 </template>
 <script>
-import NewsImage from "../NewsImage";
-import NewsHeading from "../NewsHeading";
-import NewsTime from "../NewsTime";
-import NewsText from "../NewsText";
+import NewsImage from "../NewsItemImage";
+import NewsHeading from "../NewsItemHeading";
+import NewsTime from "../NewsItemTime";
+import NewsText from "../NewsItemText";
 import ButtonsActivity from "../ButtonsActivity/ButtonsActivity";
 export default {
   components: {ButtonsActivity, NewsText, NewsTime, NewsHeading, NewsImage}

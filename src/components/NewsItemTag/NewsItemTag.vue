@@ -17,6 +17,6 @@ export default {
   },
 };
 </script>
-<style lang="postcss" src="./NewsTag.pcss" scoped>
+<style lang="postcss" src="./NewsItemTag.pcss" scoped>
 </style>
 

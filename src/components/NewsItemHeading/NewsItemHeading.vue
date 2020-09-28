@@ -2,6 +2,8 @@
   .heading
     h2.heading__content(
       :key="newsItem.title"
+      :class="{ 'heading__content--main': newsItem.id === 0, 'heading__content--default': newsItem.id > 0}"
+
     ) {{newsItem.heading}}
 </template>
 <script>
@@ -15,6 +17,6 @@ export default {
   },
 };
 </script>
-<style lang="postcss" src="./NewsHeading.pcss" scoped>
+<style lang="postcss" src="./NewsItemHeading.pcss" scoped>
 </style>
 

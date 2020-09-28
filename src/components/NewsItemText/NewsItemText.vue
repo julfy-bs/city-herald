@@ -15,6 +15,6 @@ export default {
   },
 };
 </script>
-<style lang="postcss" src="./NewsText.pcss" scoped>
+<style lang="postcss" src="./NewsItemText.pcss" scoped>
 </style>
 
