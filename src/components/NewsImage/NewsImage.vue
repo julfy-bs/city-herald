@@ -18,3 +18,4 @@ export default {
 <style lang="postcss" src="./NewsImage.pcss" scoped>
 </style>
 
+
