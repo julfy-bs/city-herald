@@ -10,13 +10,13 @@
           BannerFullWidth
         .row__wrapper
           main.column__wrapper.main-column
-            BreakingNews
             News(
               v-bind:newsItems="newsItems"
-
             )
           aside.column__wrapper.side-column
-
+            ShortNews(
+              v-bind:shortNewsItems="shortNewsItems"
+            )
     footer
       Breadcrumbs
       Footer
@@ -28,8 +28,8 @@ import Tabs from "./components/Tabs";
 import Breadcrumbs from "./components/Breadcrumbs";
 import Footer from "./components/Footer";
 import BannerFullWidth from "./components/BannerFullWidth";
-import BreakingNews from "./components/BreakingNews/BreakingNews";
 import News from "./components/News";
+import ShortNews from "./components/ShortNews/ShortNews";
 
 
 export default {
@@ -81,12 +81,55 @@ export default {
           text: 'Президент Филиппин Родриго Дутерте ответствее что готов заплатить за российскую и китайскую вакцины от COVID-19, однако намереннтран рассрочку, сообщает CNN. При этом Дутерте душевно поблагодарил своии президента России Владимира Путина и лидера Китая Си Цзиньпина за',
           required: true
         }
-      ]
+      ],
+      shortNewsItems: [
+        {
+          id: 0,
+          heading: 'Как освоить иностранный язык всего за несколько месяцев, Как освоить иностранный язык всего за несколько месяцев, Как освоить иностранный язык всего за несколько месяцев???',
+          time: '11:37',
+          date: '10.08.2020',
+          required: true
+        },
+        {
+          id: 1,
+          heading: 'Как освоить иностранный язык всего за несколько месяцев',
+          time: '11:37',
+          date: '10.08.2020',
+          required: true
+        },
+        {
+          id: 2,
+          heading: 'Как освоить иностранный язык всего за несколько месяцев',
+          time: '11:37',
+          date: '10.08.2020',
+          required: true
+        },
+        {
+          id: 3,
+          heading: 'Как освоить иностранный язык всего за несколько месяцев',
+          time: '11:37',
+          date: '10.08.2020',
+          required: true
+        },
+        {
+          id: 4,
+          heading: 'Как освоить иностранный язык всего за несколько месяцев',
+          time: '11:37',
+          date: '10.08.2020',
+          required: true
+        }
+      ],
     }
   },
   components: {
-    BreakingNews,
-    Nav, Header, Tabs, Breadcrumbs, Footer, BannerFullWidth, News
+    ShortNews,
+    Nav,
+    Header,
+    Tabs,
+    Breadcrumbs,
+    Footer,
+    BannerFullWidth,
+    News
   },
 }
 </script>

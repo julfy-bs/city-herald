@@ -5,11 +5,9 @@
     button.buttons__comment Комментарии
 </template>
 <script>
-import BreakingNewsMain from '../BreakingNewsMain';
 
 export default {
   components: {
-    BreakingNewsMain
   }
 };
 </script>
