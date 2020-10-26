@@ -17,6 +17,9 @@
             ShortNews(
               v-bind:shortNewsItems="shortNewsItems"
             )
+            PopularNews(
+              v-bind:shortNewsItems="popularNewsItems"
+            )
     footer
       Breadcrumbs
       Footer
@@ -30,6 +33,7 @@ import Footer from "./components/Footer";
 import BannerFullWidth from "./components/BannerFullWidth";
 import News from "./components/News";
 import ShortNews from "./components/ShortNews/ShortNews";
+import PopularNews from "./components/PopularNews/PopularNews";
 
 
 export default {
@@ -119,9 +123,19 @@ export default {
           required: true
         }
       ],
+      popularNewsItems: [
+        {
+          id: 0,
+          imageUrl: ('https://static.promopult.ru/uploads/library/img/google_img_1.png'),
+          heading: 'CNN: Дутерте просит Россскредите на вакцину от коо',
+          recommendation: true,
+          required: true
+        },
+      ]
     }
   },
   components: {
+    PopularNews,
     ShortNews,
     Nav,
     Header,
