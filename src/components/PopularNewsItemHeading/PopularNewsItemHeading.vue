@@ -1,6 +1,6 @@
 <template lang="pug">
-  h2.heading
-    a.heading__content(
+  h2.popular-news-heading
+    a.popular-news-heading__content(
       href="#"
       :key="heading"
     ) {{heading}}
@@ -10,12 +10,12 @@ export default {
   props: {
     heading: {
       type: String,
-      default: "",
+      default: "Ошибка! Новость не найдена!",
       required: true
     }
   },
 };
 </script>
-<style lang="postcss" src="./ShortNewsItemHeading.pcss" scoped>
+<style lang="postcss" src="./PopularNewsItemHeading.pcss" scoped>
 </style>
 

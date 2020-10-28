@@ -1,7 +1,9 @@
 <template lang="pug">
-  .short-news
+  section.short-news
     .short-news__wrapper
-      .short-news__title Новостная лента
+      SectionTitle(
+        :title="title"
+      )
       .short-news__content
         ShortNewsItem(
           v-bind:shortNewsItem="shortNewsItem"
@@ -14,12 +16,22 @@
 </template>
 <script>
 import ShortNewsItem from "../ShortNewsItem/ShortNewsItem.vue";
+import SectionTitle from "../SectionTitle/SectionTitle.vue";
 
 export default {
-  props: ['shortNewsItems'],
+  props: {
+    shortNewsItems: {
+      type: Array,
+      default: []
+    },
+    title: {
+      type: String,
+      default: "Новостная лента"
+    }
+  },
   components: {
     ShortNewsItem,
-
+    SectionTitle
   }
 };
 </script>

@@ -3,24 +3,28 @@
     .news__wrapper
       .news__left
         NewsItemTag(
-          v-bind:newsItem="newsItem"
+          v-bind:tag="newsItem.tag"
+          v-bind:tagColor="newsItem.tagColor"
         )
         NewsItemHeading(
-          v-bind:newsItem="newsItem"
+          v-bind:heading="newsItem.heading"
+          v-bind:id="newsItem.id"
         )
         NewsItemRecommendation(
           v-if="newsItem.recommendation === true"
         )
         NewsItemTime(
-          v-bind:newsItem="newsItem"
+          v-bind:time="newsItem.time"
+          v-bind:date="newsItem.date"
         )
         NewsItemText(
-          v-bind:newsItem="newsItem"
+          v-bind:text="newsItem.text"
         )
         ButtonsActivity
       .news__right
         NewsItemImage(
-          v-bind:newsItem="newsItem"
+          v-bind:imageUrl="newsItem.imageUrl"
+          v-bind:id="newsItem.id"
         )
 </template>
 <script>
@@ -33,7 +37,13 @@ import ButtonsActivity from "../ButtonsActivity/ButtonsActivity";
 import NewsItemRecommendation from "../NewsItemRecommendation/NewsItemRecommendation";
 
 export default {
-  props: ['newsItem'],
+  props: {
+    newsItem: {
+      type: Object,
+      default: {},
+      required: true
+    }
+  },
   components: {
     NewsItemRecommendation,
     ButtonsActivity,

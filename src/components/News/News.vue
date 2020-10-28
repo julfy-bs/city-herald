@@ -1,5 +1,5 @@
 <template lang="pug">
-  .news
+  section.news
     NewsItem(
       v-bind:newsItem="newsItem"
       v-for="newsItem of newsItems"

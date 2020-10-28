@@ -1,20 +1,29 @@
 <template lang="pug">
   .tag
     a.tag__content(
-      :key="newsItem.tag"
-      :style="{color:newsItem.tagColor}"
-    ) {{newsItem.tag}}
+      :key="tag"
+      :style="changeTagColor"
+    ) {{tag}}
 </template>
 <script>
 export default {
   props: {
-    newsItem: {
-      type: Object,
-      tag: "",
-      tagColor: "$TextColor",
-      required: true
+    tag: {
+      type: String,
+      default: "",
+    },
+    tagColor: {
+      type: String,
+      default: "",
     }
   },
+  computed: {
+    changeTagColor() {
+      return {
+        'color': this.tagColor
+      };
+    }
+  }
 };
 </script>
 <style lang="postcss" src="./NewsItemTag.pcss" scoped>

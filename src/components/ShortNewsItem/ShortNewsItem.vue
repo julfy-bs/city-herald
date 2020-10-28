@@ -2,10 +2,12 @@
   .short-news__item
     .short-news__wrapper
       ShortNewsItemTime(
-        v-bind:shortNewsItem="shortNewsItem"
+        v-bind:date="shortNewsItem.date"
+        v-bind:time="shortNewsItem.time"
+
       )
       ShortNewsItemHeading(
-        v-bind:shortNewsItem="shortNewsItem"
+        v-bind:heading="shortNewsItem.heading"
       )
 </template>
 <script>

@@ -1,16 +1,18 @@
 <template lang="pug">
   .time
     .time__content(
-      :key="shortNewsItem.time"
-    ) {{shortNewsItem.time}} {{shortNewsItem.date}}
+      :key="date"
+    ) {{date}}
 </template>
 <script>
 export default {
   props: {
-    shortNewsItem: {
-      type: Object,
-      time: "",
-      date: "",
+    date: {
+      type: String,
+      required: true
+    },
+    time: {
+      type: String,
       required: true
     }
   },
@@ -19,3 +21,11 @@ export default {
 <style lang="postcss" src="./ShortNewsItemTime.pcss" scoped>
 </style>
 
+computed: {
+dateAndTime() {
+return {
+time: this.shortNewsItem.time,
+date: this.shortNewsItem.date
+};
+}
+}

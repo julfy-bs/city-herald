@@ -1,17 +1,22 @@
 <template lang="pug">
   .heading
     h2.heading__content(
-      :key="newsItem.title"
-      :class="{ 'heading__content--main': newsItem.id === 0, 'heading__content--default': newsItem.id > 0}"
+      :key="heading"
+      :class="{ 'heading__content--main': id === 0, 'heading__content--default': id > 0}"
 
-    ) {{newsItem.heading}}
+    ) {{heading}}
 </template>
 <script>
 export default {
   props: {
-    newsItem: {
-      type: Object,
-      heading: "",
+    id: {
+      type: Number,
+      default: 0,
+      required: true
+    },
+    heading: {
+      type: String,
+      default: "",
       required: true
     }
   },

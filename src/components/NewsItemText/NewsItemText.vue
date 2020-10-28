@@ -1,15 +1,15 @@
 <template lang="pug">
   .news__text.text(
-    :key="newsItem.text"
+    :key="text"
   )
-    p.text__content {{newsItem.text}}
+    p.text__content {{text}}
 </template>
 <script>
 export default {
   props: {
-    newsItem: {
-      type: Object,
-      text: "",
+    text: {
+      type: String,
+      default: "",
       required: true
     }
   },
